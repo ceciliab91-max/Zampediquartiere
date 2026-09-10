@@ -2,7 +2,10 @@
   command = "npm run build"
   publish = "dist"
 
-# SPA Fallback per Single Page Application (evita errori 404 al refresh delle pagine)
+[build.environment]
+  NODE_VERSION = "22"
+
+# SPA Fallback per Single Page Application
 [[redirects]]
   from = "/*"
   to = "/index.html"
